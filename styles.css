@@ -1,0 +1,29 @@
+
+/* --- 3-photo gallery layout shared by all pages --- */
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.gallery figure{
+  margin: 0;
+}
+.gallery img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #e7e9f1;
+}
+.gallery figcaption{
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 0.35rem;
+}
+
+/* Stack on small screens */
+@media (max-width: 720px){
+  .gallery{
+    grid-template-columns: 1fr;
+  }
+}
