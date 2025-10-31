@@ -1,29 +1,114 @@
-
-/* --- 3-photo gallery layout shared by all pages --- */
-.gallery{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-.gallery figure{
+/* === American Muscle Cars Theme === */
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
-.gallery img{
+
+body {
+  background-color: #0b0b0c;
+  color: #eaeaea;
+  font-family: 'Segoe UI', Georgia, serif;
+  line-height: 1.6;
+  padding: 1.5rem;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background: #c10000;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+.skip-link:focus {
+  top: 10px;
+}
+
+/* Header */
+.site-header {
+  text-align: center;
+  background: #111;
+  padding: 2rem 1rem;
+  border-bottom: 3px solid #c10000;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+.site-header h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+.tagline {
+  color: #ff3333;
+  font-weight: bold;
+}
+
+/* Navigation */
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.site-nav a {
+  color: #eaeaea;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  background: #c10000;
+  color: #fff;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.gallery img {
   width: 100%;
   height: auto;
-  display: block;
   border-radius: 8px;
-  border: 1px solid #e7e9f1;
+  border: 2px solid #333;
 }
-.gallery figcaption{
-  font-size: 0.95rem;
-  color: #555;
-  margin-top: 0.35rem;
+.gallery figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-top: 0.3rem;
 }
 
-/* Stack on small screens */
-@media (max-width: 720px){
-  .gallery{
-    grid-template-columns: 1fr;
+/* Lists & Sections */
+ul, dl {
+  margin: 1rem 0 1rem 1.5rem;
+}
+dt {
+  font-weight: bold;
+  color: #ff3333;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: #888;
+  border-top: 1px solid #222;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .site-nav ul {
+    flex-direction: column;
   }
 }
