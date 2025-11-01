@@ -4,7 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Home | American Muscle Cars</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- ✅ Use relative path for CSS so it works on GitHub Pages -->
+  <link rel="stylesheet" href="./styles.css" />
+
   <style>
     /* Home page gallery styling */
     .gallery {
@@ -31,6 +34,38 @@
       color: #bbb;
       text-align: center;
     }
+
+    /* Global look for consistency */
+    body {
+      background-color: #111;
+      color: #eee;
+      font-family: "Arial", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .site-header, .site-footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1b1b1b;
+    }
+    .site-nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+      background-color: #222;
+    }
+    .site-nav a {
+      color: #eee;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .site-nav a:hover {
+      color: #f33;
+    }
   </style>
 </head>
 <body>
@@ -43,11 +78,11 @@
 
   <nav class="site-nav" aria-label="Main navigation">
     <ul>
-      <li><a href="index.html" aria-current="page">Home</a></li>
-      <li><a href="charger.html">Dodge Charger</a></li>
-      <li><a href="challenger.html">Dodge Challenger</a></li>
-      <li><a href="mustang.html">Ford Mustang</a></li>
-      <li><a href="camaro.html">Chevrolet Camaro</a></li>
+      <li><a href="./index.html" aria-current="page">Home</a></li>
+      <li><a href="./charger.html">Dodge Charger</a></li>
+      <li><a href="./challenger.html">Dodge Challenger</a></li>
+      <li><a href="./mustang.html">Ford Mustang</a></li>
+      <li><a href="./camaro.html">Chevrolet Camaro</a></li>
     </ul>
   </nav>
 
@@ -75,33 +110,37 @@
       <h2 id="gallery">Gallery</h2>
       <div class="gallery">
         <figure>
-          <img src="images/home1.jpg" alt="Classic red muscle car on a deserted road at sunset" />
+          <!-- ✅ Relative image path for GitHub -->
+          <img src="./images/home1.jpg" alt="Classic red muscle car on a deserted road at sunset" />
           <figcaption>
             Background image: <em>Classic Red Muscle Car on Deserted Road at Sunset</em> by 
             <strong>Garvin St. Villier</strong> at 
-            <a href="https://www.pexels.com/photo/classic-red-muscle-car-on-deserted-road-at-sunset-32003500/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.pexels.com/photo/classic-red-muscle-car-on-deserted-road-at-sunset-32003500/" 
+               target="_blank" rel="noopener noreferrer">
               pexels.com/photo/classic-red-muscle-car-32003500
             </a>, Pexels License.
           </figcaption>
         </figure>
 
         <figure>
-          <img src="images/home2.jpg" alt="Green Dodge Charger on road under bright blue sky" />
+          <img src="./images/home2.jpg" alt="Green Dodge Charger on road under bright blue sky" />
           <figcaption>
             Background image: <em>Green Dodge Charger on Road</em> by 
             <strong>Erik Mclean</strong> at 
-            <a href="https://www.pexels.com/photo/green-dodge-charger-on-road-19291578/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.pexels.com/photo/green-dodge-charger-on-road-19291578/" 
+               target="_blank" rel="noopener noreferrer">
               pexels.com/photo/green-dodge-charger-19291578
             </a>, Pexels License.
           </figcaption>
         </figure>
 
         <figure>
-          <img src="images/home3.jpg" alt="Chrome Chrysler 426 HEMI V8 engine inside a vintage car" />
+          <img src="./images/home3.jpg" alt="Chrome Chrysler 426 HEMI V8 engine inside a vintage car" />
           <figcaption>
             Background image: <em>Renovated Chrysler 426 HEMI V8 Engine of a Vintage Car</em> by 
             <strong>Thorsten Technoman</strong> at 
-            <a href="https://www.pexels.com/photo/renovated-chrysler-426-hemi-v8-engine-of-a-vintage-car-24012987/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.pexels.com/photo/renovated-chrysler-426-hemi-v8-engine-of-a-vintage-car-24012987/" 
+               target="_blank" rel="noopener noreferrer">
               pexels.com/photo/renovated-chrysler-engine-24012987
             </a>, Pexels License.
           </figcaption>
