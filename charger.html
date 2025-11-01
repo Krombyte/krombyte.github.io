@@ -4,7 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>2023 Dodge Charger | American Muscle Cars</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- ✅ Use relative path for CSS (works on GitHub Pages) -->
+  <link rel="stylesheet" href="./styles.css" />
+
   <style>
     /* Charger page image layout */
     figure {
@@ -24,6 +27,38 @@
       color: #bbb;
       font-size: 0.9rem;
     }
+
+    /* Ensure footer and header match overall theme */
+    body {
+      background-color: #111;
+      color: #eee;
+      font-family: "Arial", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .site-header, .site-footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1b1b1b;
+    }
+    .site-nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+      background-color: #222;
+    }
+    .site-nav a {
+      color: #eee;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .site-nav a:hover {
+      color: #f33;
+    }
   </style>
 </head>
 <body>
@@ -34,13 +69,13 @@
     <p class="tagline">The Final Chapter of a Legend</p>
   </header>
 
-  <nav class="site-nav">
+  <nav class="site-nav" aria-label="Main navigation">
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="charger.html" aria-current="page">Dodge Charger</a></li>
-      <li><a href="challenger.html">Dodge Challenger</a></li>
-      <li><a href="mustang.html">Ford Mustang</a></li>
-      <li><a href="camaro.html">Chevrolet Camaro</a></li>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./charger.html" aria-current="page">Dodge Charger</a></li>
+      <li><a href="./challenger.html">Dodge Challenger</a></li>
+      <li><a href="./mustang.html">Ford Mustang</a></li>
+      <li><a href="./camaro.html">Chevrolet Camaro</a></li>
     </ul>
   </nav>
 
@@ -60,44 +95,4 @@
         <li>SXT — 292 HP (3.6L V6)</li>
         <li>GT — 300 HP (3.6L V6 AWD)</li>
         <li>R/T — 370 HP (5.7L HEMI V8)</li>
-        <li>Scat Pack — 485 HP (6.4L HEMI V8)</li>
-        <li>Hellcat Redeye Jailbreak — 807 HP (Supercharged 6.2L HEMI V8)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>General Specifications</h2>
-      <dl>
-        <dt>Transmission</dt>
-        <dd>8-speed automatic</dd>
-        <dt>Drive Type</dt>
-        <dd>Rear-wheel or all-wheel drive</dd>
-        <dt>0–60 mph</dt>
-        <dd>as quick as 3.5 seconds</dd>
-      </dl>
-    </section>
-
-    <figure>
-      <!-- Local image stored in images/charger.jpg -->
-      <img src="images/charger.jpg" alt="White Dodge Charger SRT Hellcat Widebody on the top floor of a parking garage at dusk" />
-      <figcaption>
-        The 2023 Dodge Charger Hellcat Jailbreak — powerful, sleek, and unmistakably American.
-      </figcaption>
-    </figure>
-
-    <h3>Credits & Licensing</h3>
-    <p>
-      Background image: <em>White Dodge Charger SRT Hellcat Widebody on the top floor of the parking garage at dusk</em> by 
-      <strong>Scott Neil</strong> at 
-      <a href="https://www.pexels.com/photo/white-dodge-charger-srt-hellcat-widebody-on-the-top-floor-of-the-parking-garage-at-dusk-14378766/" 
-         target="_blank" rel="noopener noreferrer">
-        pexels.com/photo/white-dodge-charger-14378766
-      </a>, Pexels License.
-    </p>
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2025 Mohamed Alharbi | Built for LIS351 Major Project 1</p>
-  </footer>
-</body>
-</html>
+       
