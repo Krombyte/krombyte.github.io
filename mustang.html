@@ -4,24 +4,60 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>2025 Ford Mustang | American Muscle Cars</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- ✅ Relative path for GitHub Pages -->
+  <link rel="stylesheet" href="./styles.css" />
+
   <style>
-    /* Local adjustments for the mustang page only */
+    /* Local adjustments for the Mustang page */
     figure {
-      max-width: 700px;       /* limits image width for better balance */
-      margin: 2rem auto;      /* adds space above and below + centers it */
+      max-width: 700px;
+      margin: 2.5rem auto;
       text-align: center;
     }
     figure img {
-      width: 90%;             /* slightly smaller than container */
+      width: 70%;
       height: auto;
       border-radius: 8px;
       border: 2px solid #333;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
     }
     figure figcaption {
       margin-top: 0.5rem;
       color: #bbb;
       font-size: 0.9rem;
+    }
+
+    /* Shared visual style */
+    body {
+      background-color: #111;
+      color: #eee;
+      font-family: "Arial", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .site-header, .site-footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1b1b1b;
+    }
+    .site-nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+      background-color: #222;
+    }
+    .site-nav a {
+      color: #eee;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .site-nav a:hover {
+      color: #f33;
     }
   </style>
 </head>
@@ -33,13 +69,13 @@
     <p class="tagline">The Future of American Muscle</p>
   </header>
 
-  <nav class="site-nav">
+  <nav class="site-nav" aria-label="Main navigation">
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="charger.html">Dodge Charger</a></li>
-      <li><a href="challenger.html">Dodge Challenger</a></li>
-      <li><a href="mustang.html" aria-current="page">Ford Mustang</a></li>
-      <li><a href="camaro.html">Chevrolet Camaro</a></li>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./charger.html">Dodge Charger</a></li>
+      <li><a href="./challenger.html">Dodge Challenger</a></li>
+      <li><a href="./mustang.html" aria-current="page">Ford Mustang</a></li>
+      <li><a href="./camaro.html">Chevrolet Camaro</a></li>
     </ul>
   </nav>
 
@@ -70,7 +106,8 @@
     </dl>
 
     <figure>
-      <img src="images/mustang_darkhorse.jpg" alt="2025 Ford Mustang Dark Horse coupe parked outdoors" />
+      <!-- ✅ GitHub-compatible relative path -->
+      <img src="./images/mustang_darkhorse.jpg" alt="2025 Ford Mustang Dark Horse coupe parked outdoors" />
       <figcaption>The 2025 Ford Mustang Dark Horse — the evolution of performance.</figcaption>
     </figure>
 
@@ -78,8 +115,9 @@
     <p>
       Background image: <em>Ford Mustang Coupé Dark Horse (VII) – f 18052025</em> by 
       <strong>M 93</strong> at 
-      <a href="https://commons.wikimedia.org/wiki/File:Ford_Mustang_Dark_Horse" target="_blank" rel="noopener noreferrer">
-        commons.wikimedia.org/wiki/File:Ford_Mustang_Dark_Horse
+      <a href="https://commons.wikimedia.org/wiki/File:Ford_Mustang_Coup%C3%A9_Dark_Horse_%28VII%29_%E2%80%93_f_18052025.jpg"
+         target="_blank" rel="noopener noreferrer">
+        commons.wikimedia.org/wiki/File:Ford_Mustang_Coupé_Dark_Horse
       </a>, CC BY-SA 3.0 (DE).
     </p>
   </main>
