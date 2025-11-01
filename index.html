@@ -5,6 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Home | American Muscle Cars</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Home page gallery styling */
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.5rem;
+      margin: 2rem auto;
+      max-width: 900px;
+    }
+    .gallery figure {
+      text-align: center;
+    }
+    .gallery img {
+      width: 70%;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid #333;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+      margin-bottom: 0.5rem;
+    }
+    .gallery figcaption {
+      font-size: 0.9rem;
+      color: #bbb;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to main content</a>
@@ -28,19 +55,19 @@
     <section>
       <h2>The Spirit of American Muscle</h2>
       <p>
-        American muscle cars are icons of power, style, and rebellion. Born in the 1960s, they became legends for
-        combining raw horsepower with aggressive looks and affordability. Today, they continue to evolve with
-        modern engineering while staying true to their roots.
+        American muscle cars are icons of power, style, and rebellion. Born in the 1960s, they
+        became legends for combining raw horsepower with bold design and affordability. Today,
+        they blend classic charm with modern engineering, keeping the adrenaline alive.
       </p>
     </section>
 
     <section>
       <h2>Famous Muscle Car Facts</h2>
       <ul>
-        <li>The term “muscle car” was first used in the mid-1960s to describe affordable American coupes with high-performance V8 engines.</li>
-        <li>The 1970s oil crisis temporarily ended the golden age of muscle cars due to stricter emissions and fuel economy rules.</li>
-        <li>Modern models, like the Charger Hellcat and Mustang GT500, exceed 700 horsepower — something unimaginable decades ago.</li>
-        <li>Muscle cars are celebrated globally as symbols of freedom and American automotive culture.</li>
+        <li>The 1964 Pontiac GTO is often credited as the first true muscle car.</li>
+        <li>During the 1970s, rising fuel costs nearly ended muscle car production.</li>
+        <li>Modern models like the Charger Hellcat and Mustang GT500 exceed 700 horsepower.</li>
+        <li>Muscle cars are celebrated worldwide as symbols of strength and freedom.</li>
       </ul>
     </section>
 
@@ -48,16 +75,36 @@
       <h2 id="gallery">Gallery</h2>
       <div class="gallery">
         <figure>
-          <img src="images/home1.jpg" alt="Classic red muscle car parked on an open road" />
-          <figcaption>Classic American power</figcaption>
+          <img src="images/home1.jpg" alt="Classic red muscle car on a deserted road at sunset" />
+          <figcaption>
+            Background image: <em>Classic Red Muscle Car on Deserted Road at Sunset</em> by 
+            <strong>Garvin St. Villier</strong> at 
+            <a href="https://www.pexels.com/photo/classic-red-muscle-car-on-deserted-road-at-sunset-32003500/" target="_blank" rel="noopener noreferrer">
+              pexels.com/photo/classic-red-muscle-car-32003500
+            </a>, Pexels License.
+          </figcaption>
         </figure>
+
         <figure>
-          <img src="images/home2.jpg" alt="Modern Dodge Charger in motion on a highway" />
-          <figcaption>The modern evolution of muscle</figcaption>
+          <img src="images/home2.jpg" alt="Green Dodge Charger on road under bright blue sky" />
+          <figcaption>
+            Background image: <em>Green Dodge Charger on Road</em> by 
+            <strong>Erik Mclean</strong> at 
+            <a href="https://www.pexels.com/photo/green-dodge-charger-on-road-19291578/" target="_blank" rel="noopener noreferrer">
+              pexels.com/photo/green-dodge-charger-19291578
+            </a>, Pexels License.
+          </figcaption>
         </figure>
+
         <figure>
-          <img src="images/home3.jpg" alt="Close-up of V8 engine with chrome detailing" />
-          <figcaption>The heart of every muscle car — the V8</figcaption>
+          <img src="images/home3.jpg" alt="Chrome Chrysler 426 HEMI V8 engine inside a vintage car" />
+          <figcaption>
+            Background image: <em>Renovated Chrysler 426 HEMI V8 Engine of a Vintage Car</em> by 
+            <strong>Thorsten Technoman</strong> at 
+            <a href="https://www.pexels.com/photo/renovated-chrysler-426-hemi-v8-engine-of-a-vintage-car-24012987/" target="_blank" rel="noopener noreferrer">
+              pexels.com/photo/renovated-chrysler-engine-24012987
+            </a>, Pexels License.
+          </figcaption>
         </figure>
       </div>
     </section>
